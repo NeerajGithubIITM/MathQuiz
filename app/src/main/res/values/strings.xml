@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Math Quiz: Speed Test</string>
+    <string name="end_game_warning">The session has not yet begun!!</string>
+    <string name="begin">Let\'s Begin</string>
+    <string name="time_up">Time\'s up</string>
+    <string name="insh">Read the following instructions carefully. You will not be allowed to read the instructions once the session has begun.</string>
+    <string name="ins1">1. Each question will have 4 options out of which only 1 is correct.</string>
+    <string name="ins2">2. The marked option will turn green if the answer is right and red if the answer is incorrect.</string>
+    <string name="ins3">3. You will have 8 secs to give the answer.</string>
+    <string name="ins4">4. When the time is up, the question is marked as timed out and the next question is displayed.</string>
+    <string name="ins5">5. You may skip a question in between if you wish to.</string>
+    <string name="ins6">6. Once you feel you have solved enough questions, you can hit the stop quiz button which ends the session and presents a report and analysis of the session.</string>
+    <string name="ins7">7. Your aim should be to increase the percentage of correct answers with more and more attempts</string>
+    <string name="skip">Skip question</string>
+    <string name="res1">1. Total questions in the session:</string>
+    <string name="res2">2. Number of questions answered:</string>
+    <string name="res3">3. Number of Correct answers:</string>
+    <string name="res4">4. Number of Incorrect answers:</string>
+    <string name="res5">5. Number of questions timed out:</string>
+    <string name="res6">6. Number of questions skipped:</string>
+    <string name="res7">7. Percentage of correct answers:</string>
+    <string name="view_result">View Report</string>
+    <string name="begin_session">Begin Session</string>
+    <string name="stop_quiz">Stop Quiz</string>
+</resources>

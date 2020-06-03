@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".rapidfire">
+
+    <TextView
+        android:id="@+id/question_no"
+        android:layout_width="195dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        android:text="Question No:"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rfire"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Rapid Fire Mode"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="280dp"
+        android:background="#9DD1FB"
+        android:paddingLeft="16dp"
+        android:textAlignment="viewStart"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answer_1"
+        android:layout_width="158dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/white"
+        android:onClick="checkRight"
+        android:tag="0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/question" />
+
+    <TextView
+        android:id="@+id/answer_2"
+        android:layout_width="158dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/white"
+        android:onClick="checkRight"
+        android:tag="1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/question" />
+
+    <TextView
+        android:id="@+id/answer_3"
+        android:layout_width="158dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/white"
+        android:onClick="checkRight"
+        android:tag="3"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/question" />
+
+    <TextView
+        android:id="@+id/answer_4"
+        android:layout_width="158dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/white"
+        android:onClick="checkRight"
+        android:tag="2"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/question" />
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_width="324dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="60dp"
+        android:background="#A202BE"
+        android:text="@string/begin_session"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="195dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="216dp"
+        android:background="@android:color/black"
+        android:hint="Timer"
+        android:paddingTop="4dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/question_no"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/endgame"
+        android:layout_width="178dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="24dp"
+        android:background="#CE0303"
+        android:text="Stop Quiz"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/question_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rfire"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <Button
+        android:id="@+id/instruction"
+        android:layout_width="178dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:background="#0221DA"
+        android:text="Instructions"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/question_no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rfire"
+        app:layout_constraintVertical_bias="0.54" />
+        android:layout_height=""
+
+</androidx.constraintlayout.widget.ConstraintLayout>
